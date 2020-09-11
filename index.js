@@ -8,7 +8,7 @@ const app = express();
 // Node server
 const server = require('http').createServer(app);
 module.exports.io = require('socket.io')(server);
-
+require('./sockets/socket.js');
 
 
 // Crear ruta publica

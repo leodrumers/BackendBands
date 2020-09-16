@@ -17,6 +17,11 @@
             console.log('Cliente conectado al servidor');
         });
 
+        socket.on('active-bands', function (bands) {
+            console.clear();
+            console.table(bands);
+        });
+
         socket.on('disconnect', function () {
             console.log('Cliente desconectado del servidor');
         });
